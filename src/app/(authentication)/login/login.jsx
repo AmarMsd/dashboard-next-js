@@ -23,7 +23,6 @@ export default function LoginForm() {
       const data = await response.json();
 
       if (response.ok && data.status === 'success') {
-        // Redirect ke dashboard jika berhasil
         router.push('/dashboard'); 
       } else {
         setError(data.message || 'Username atau password salah');
