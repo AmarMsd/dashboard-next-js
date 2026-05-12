@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { LayoutDashboard, Users, Settings } from 'lucide-react';
+import { is } from 'date-fns/locale';
 
 export default function SidebarMenu() {
     const pathname = usePathname();
@@ -16,9 +17,16 @@ export default function SidebarMenu() {
 
     const menuItems = [
         { name: 'Dashboard', path: '/', icon: LayoutDashboard },
-        { name: 'Users', path: '/dashboard/users', icon: Users },
-        { name: 'Settings', path: '/dashboard/settings', icon: Settings },
+        { name: 'Users', path: '/dashboard/users', icon: Users, isMaintenence: true },
+        { name: 'Settings', path: '/dashboard/settings', icon: Settings, isMaintenence: true },
     ];
+
+    const handleMenuClick = (e, isMaintenence) => {
+        if (isMaintenence) {
+            e.preventDefault();
+            alert('Halaman belum tersedia atau sedang dalam pengembangan.');
+        }
+    };
 
     return (
         <div className="w-64 bg-[#1e1f1f] text-white min-h-screen flex flex-col sticky top-0">
@@ -37,6 +45,7 @@ export default function SidebarMenu() {
                             key={item.path} 
                             href={item.path} 
                             className={getActiveLink(item.path)}
+                            onClick={(e) => handleMenuClick(e, item.isMaintenence)}
                         >
                             <Icon className="w-5 h-5" /> 
                             {item.name}
