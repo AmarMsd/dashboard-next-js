@@ -48,23 +48,19 @@ export default function SidebarMenu() {
             
             
             <footer className="mt-auto py-6">
-                    <a href="mailto:amarmsd1212@gmail.com" className="block">
-                        <div className="px-4">
-                            <div className="rounded-md border border-gray-300 shadow-sm w-full py-4 bg-white text-sm 
-                                            font-medium text-gray-700 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring-2 
-                                            focus:ring-offset-2 focus:ring-indigo-500 text-center mb-4">
-                                <h3>Need Help?</h3>
-                            </div>
-                        
+                <a href="mailto:amarmsd1212@gmail.com" className="block">
+                    <div className="px-4">
+                        <div className="rounded-md border border-gray-300 shadow-sm w-full py-4 bg-white text-sm font-medium text-gray-700 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-center mb-4">
+                            <h3>Need Help?</h3>
                         </div>
-                    </a>
+                    </div>
+                </a>
 
-                
                 <div className="border-t border-gray-700/50"></div>
-                <div className="px-4 py-4 text-sm text-gray-500 px-0">
+                
+                <div className="px-4 py-4 text-sm text-gray-500">
                     &copy; 2026 HR Management. All rights reserved.
                 </div>
-
             </footer>
         </div>
     );
