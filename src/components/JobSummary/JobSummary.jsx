@@ -30,7 +30,6 @@ export default function JobSummary() {
     },
   ];
 
-  // Menghitung total keseluruhan pekerjaan (80 + 20 + 18 + 15 = 133)
   const totalJobs = dataJobSummary.reduce((sum, item) => sum + item.count, 0);
 
   const size = 200; 
