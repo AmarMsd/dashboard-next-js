@@ -36,9 +36,9 @@ export default function Employee() {
   ];
 
   return (
-    <div className="rounded-2xl w-full max-w-sm border border-gray-100 mt-4 bg-white p-6">
+    <div className="rounded-2xl w-full max-w-sm mt-10 ">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold">Employee</h2>
+        <h2 className="text-xl font-bold">Employee</h2>
         <div className="border rounded-md px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 cursor-pointer">
             Lihat Semua
         </div>

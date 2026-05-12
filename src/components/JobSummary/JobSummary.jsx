@@ -39,16 +39,16 @@ export default function JobSummary() {
   let cumulativePercent = 0; 
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm p-6 w-full max-w-sm border border-gray-100 mt-4">
+    <div className="rounded-2xl w-full max-w-sm mt-10">
       
-      <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl font-bold tracking-tight text-gray-900">
-          Jobs Summary
-        </h2>
-        <button className="text-gray-500 hover:text-gray-700">
-          <MoreVertical className="w-5 h-5" />
-        </button>
-      </div>
+    <div className="flex justify-between items-center mb-6">
+      <h2 className="text-xl font-bold tracking-tight text-gray-900">
+        Jobs Summary
+      </h2>
+      <button className="text-gray-500 hover:text-gray-700">
+        <MoreVertical className="w-5 h-5" />
+      </button>
+    </div>
 
       <div className="relative flex justify-center items-center mb-8">
         <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>

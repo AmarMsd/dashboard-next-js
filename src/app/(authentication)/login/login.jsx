@@ -36,11 +36,11 @@ export default function LoginForm() {
 
   return (
     <div className="max-w-md w-full bg-[#1e1f1f] rounded-xl shadow-lg px-8 py-12">
-      <h2 className="text-5xl font-extrabold text-center mb-8 text-white">HR Management</h2>
+      <h2 className="text-2xl font-extrabold text-center mb-8 text-white">HR Management</h2>
       
       {error && <div className="text-red-500 mb-4 text-center">{error}</div>}
 
-      <form onSubmit={handleSubmit} className="space-y-6 text-white">
+      <form onSubmit={handleSubmit} className="space-y-6 text-white text-md">
         <InputField
           label="Username"
           type="text"
@@ -55,7 +55,7 @@ export default function LoginForm() {
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Masukkan Password..."
         />
-        <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg">
+        <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded-lg">
           MASUK
         </button>
       </form>

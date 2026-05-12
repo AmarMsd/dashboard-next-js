@@ -19,7 +19,7 @@ export default function DashboardPage() {
     <>
       <Navbar />
 
-      <h1 className="text-3xl font-bold">Dashboard</h1>
+      <h1 className="text-2xl font-bold">Dashboard</h1>
       <div className="flex items-center justify-between gap-4 mt-4">
         <p className="text-gray-600">Hari ini Senin, 11 Mei 2026.</p>
 
@@ -33,9 +33,9 @@ export default function DashboardPage() {
 
         <div className="flex flex-row gap-6 mt-6">
             <div className="mt-6 rounded-lg shadow-md w-full px-6 py-4 bg-white">
-                <div className="flex item-center justify-between">
+                <div className="flex item-center justify-between mt-10">
                     <div className="flex flex-row gap-2">
-                        <h2 className="text-2xl font-bold ml-10 mr-48">Hiring</h2>
+                        <h2 className="text-xl font-bold ml-10 mr-36">Hiring</h2>
                         <DropDownJobs />
                     </div>
                     <div className="border rounded-md px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 cursor-pointer">
@@ -55,9 +55,9 @@ export default function DashboardPage() {
         
         <div className="flex flex-row gap-6 mt-6">
             <div className="mt-6 rounded-lg shadow-md w-full px-6 py-4 bg-white">
-                <div className="flex item-center justify-between">
+                <div className="flex item-center justify-between mt-10">
                     <div className="flex flex-row gap-2">
-                        <h2 className="text-2xl font-bold  ml-10 mr-48">Task</h2>
+                        <h2 className="text-xl font-bold  ml-10 mr-36">Task</h2>
                         <DateRange />
                     </div>
                     
