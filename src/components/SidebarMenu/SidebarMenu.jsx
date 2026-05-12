@@ -21,7 +21,7 @@ export default function SidebarMenu() {
     ];
 
     return (
-        <div className="w-64 bg-[#1e1f1f] text-white h-screen">
+        <div className="w-64 bg-[#1e1f1f] text-white min-h-screen flex flex-col sticky top-0">
             <div className="w-full px-6 py-6">
                 <h2 className="text-2xl font-light tracking-tight">HR Management</h2>
             </div>
@@ -44,6 +44,28 @@ export default function SidebarMenu() {
                     );
                 })}
             </nav>
+
+            
+            
+            <footer className="mt-auto py-6">
+                    <a href="mailto:amarmsd1212@gmail.com" className="block">
+                        <div className="px-4">
+                            <div className="rounded-md border border-gray-300 shadow-sm w-full py-4 bg-white text-sm 
+                                            font-medium text-gray-700 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring-2 
+                                            focus:ring-offset-2 focus:ring-indigo-500 text-center mb-4">
+                                <h3>Need Help?</h3>
+                            </div>
+                        
+                        </div>
+                    </a>
+
+                
+                <div className="border-t border-gray-700/50"></div>
+                <div className="px-4 py-4 text-sm text-gray-500 px-0">
+                    &copy; 2026 HR Management. All rights reserved.
+                </div>
+
+            </footer>
         </div>
     );
 }
