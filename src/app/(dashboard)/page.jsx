@@ -10,12 +10,15 @@ import RecruitmentTable from "@/components/RecruitmentTable/RecruitmentTable"
 import JobSummary from "@/components/JobSummary/JobSummary"
 import TaskCard from "@/components/Task/Task"
 import Employee from "@/components/Employee/Employee"
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function DashboardPage() {
   
 
   return (
     <>
+      <Navbar />
+
       <h1 className="text-3xl font-bold">Dashboard</h1>
       <div className="flex items-center justify-between gap-4 mt-4">
         <p className="text-gray-600">Hari ini Senin, 11 Mei 2026.</p>
