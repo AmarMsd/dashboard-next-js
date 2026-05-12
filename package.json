@@ -16,7 +16,7 @@
     "postcss": "^8.5.14",
     "radix-ui": "^1.4.3",
     "react": "19.2.4",
-    "react-day-picker": "^10.0.0",
+    "react-day-picker": "^8.10.1",
     "react-dom": "19.2.4",
     "shadcn": "^4.7.0",
     "tailwind-merge": "^3.6.0",
