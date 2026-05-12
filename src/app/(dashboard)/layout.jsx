@@ -8,7 +8,7 @@ export default function DashboardLayout({ children }) {
       </aside>
 
       
-      <main className="flex-1 p-8">
+      <main className="flex-1 p-8 w-full">
         {children} {}
       </main>
     </section>
