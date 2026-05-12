@@ -7,6 +7,8 @@ import DateRange from "@/components/DateRange/DateRange"
 import Export from "@/components/Export/Export"
 import DropDownJobs from "@/components/DropDownJobs/DropDownJobs"
 import RecruitmentTable from "@/components/RecruitmentTable/RecruitmentTable"
+import JobSummary from "@/components/JobSummary/JobSummary"
+import TaskCard from "@/components/TaskCard/TaskCard"
 
 export default function DashboardPage() {
   
@@ -24,21 +26,44 @@ export default function DashboardPage() {
         
       </div>
 
-        <div className="mt-6 rounded-lg shadow-md w-[75%] px-6 py-4 bg-white">
-            <div className="flex item-center justify-between">
-                <div className="flex flex-row gap-2">
-                    <h2 className="text-2xl font-bold mr-24">Hiring</h2>
-                    <DropDownJobs />
-                </div>
-                <div className="border rounded-md px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 cursor-pointer">
-                    Lihat Semua
-                </div>
-            </div>
 
-            <div className="flex flex-col gap-4 mt-4 bg-white rounded-lg p-4">
-                <RecruitmentTable />    
+        <div className="flex flex-row gap-6 mt-6">
+            <div className="mt-6 rounded-lg shadow-md w-full px-6 py-4 bg-white">
+                <div className="flex item-center justify-between">
+                    <div className="flex flex-row gap-2">
+                        <h2 className="text-2xl font-bold mr-24">Hiring</h2>
+                        <DropDownJobs />
+                    </div>
+                    <div className="border rounded-md px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 cursor-pointer">
+                        Lihat Semua
+                    </div>
+                </div>
+
+                <div className="flex flex-row gap-4 mt-4 bg-white rounded-lg p-4">
+                    <RecruitmentTable />    
+                </div>
+                
+            </div>
+            <div className="mt-6 rounded-lg shadow-md px-6 py-4 bg-white w-[30%]">
+                <JobSummary />
             </div>
         </div>
+        
+        <div className="flex flex-col ">
+            <div className="mt-6 rounded-lg shadow-md w-full px-6 py-4 bg-white">
+                <div className="flex item-center justify-between">
+                    <h2 className="text-2xl font-bold">Task</h2>
+                    <div className="border rounded-md px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 cursor-pointer">
+                        Lihat Semua
+                    </div>
+                </div>
+                
+                <div className="flex flex-row gap-4 mt-4 bg-white rounded-lg p-4">
+                    <TaskCard />    
+                </div>
+            </div>
+        </div>
+       
     </>
   )
 }
