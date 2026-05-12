@@ -23,7 +23,7 @@ export default function SidebarMenu() {
     return (
         <div className="w-64 bg-[#1e1f1f] text-white h-screen">
             <div className="w-full px-6 py-6">
-                <h2 className="text-2xl font-extrabold tracking-tight">HR Management</h2>
+                <h2 className="text-2xl font-light tracking-tight">HR Management</h2>
             </div>
             
             <div className="border-b border-gray-700/50"></div>
