@@ -2,9 +2,7 @@
 import React from "react";
 
 export default function RecruitmentTable() {
-  // Data statis untuk mensimulasikan tabel (bisa diganti dengan data API nanti)
-  // Penggunaan objek warna ini penting di Tailwind agar class tidak ter-purge (terhapus saat build)
-  const pipelineData = [
+  const recruitmentData = [
     {
       id: 1,
       jobTitle: "Software Engineer",
@@ -60,13 +58,13 @@ export default function RecruitmentTable() {
         </div>
 
         <div className="flex flex-col gap-4">
-          {pipelineData.map((row) => (
+          {recruitmentData.map((row) => (
             <div key={row.id} className="grid grid-cols-[minmax(200px,1.5fr)_repeat(5,1fr)] gap-4 items-center">
               
               <div>
                 <h3 className="font-bold text-lg text-gray-900">{row.jobTitle}</h3>
                 <p className="text-xs text-gray-500 uppercase tracking-wide mt-0.5">
-                  Total Application {row.totalApp}
+                  Total Pelamar {row.totalApp}
                 </p>
               </div>
 
@@ -74,16 +72,16 @@ export default function RecruitmentTable() {
                 let cellClass = "flex items-center px-4 py-3 rounded-lg text-sm font-medium h-12 ";
                 
                 if (stage.status === "empty") {
-                  cellClass += "bg-gray-50"; // Kotak abu-abu kosong
+                  cellClass += "bg-gray-50"; 
                 } else if (stage.status === "light") {
-                  cellClass += row.theme.light; // Kotak warna muda
+                  cellClass += row.theme.light;
                 } else if (stage.status === "active") {
-                  cellClass += row.theme.active; // Kotak warna lebih gelap (tahap saat ini)
+                  cellClass += row.theme.active; 
                 }
 
                 return (
                   <div key={index} className={cellClass}>
-                    {stage.count !== null ? `${stage.count} Candidates` : ""}
+                    {stage.count !== null ? `${stage.count} Pelamar` : ""}
                   </div>
                 );
               })}
